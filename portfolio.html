@@ -109,17 +109,65 @@
             margin: auto;
         }
         
-        .about_discription {
+        .about_description {
             color: white;
             font-size: 16px;
             margin-top: 10px;
         }
+        .thirdsection{
+            max-width: 80vw;
+            margin: auto;
+            text-align: left;
+        }
+        .projects{
+            color: rgba(72, 20, 122, 0.955);
+            font-weight: 600;
+            font-size: 2.5rem;
+            margin: auto;
+            text-align: center;
+        }
+        .todolist{
+            color: rgba(27, 10, 44, 0.955);
+            font-size: 20px;
+            margin-top: 10px;
+            
+        }
+        .todolistdes{
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            margin-top: 10px; 
+         
+        }
+        .todolistdesc{
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            margin-top: 10px; 
+            margin-left: 50px; 
+        }
+        .simplecalculator{
+            color: rgba(27, 10, 44, 0.955);
+            font-size: 20px;
+            margin-top: 10px; 
+        }
+        .simplecalculatordes{
+            color: white;
+            font-size: 16px;
+            margin-top: 10px; 
+        }
+        .simplecalculatordesc{
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            margin-top: 10px; 
+            margin-left: 50px; 
+        }
         
-        .ThirdSection {
+        
+        .FourthSection {
             max-width: 80vw;
             margin: auto;
             text-align: center;
             align-items: center;
+         
         }
         
         .skills_heading {
@@ -127,12 +175,14 @@
             font-weight: 600;
             font-size: 2.5rem;
             margin: auto;
+            text-align: center;
         }
         
         .info {
             color: #fffeff;
             width: 80%;
             border-radius: 2px;
+            margin: auto;
         }
         
         #skills {
@@ -140,6 +190,7 @@
             background-image: url(my.jpeg);
             background-repeat: no-repeat;
             background-position: right 150px;
+            margin: auto;
         }
         
         .skills-container {
@@ -148,6 +199,7 @@
             align-items: center;
             gap: 2rem;
             margin-top: 4rem;
+            margin: auto;
         }
         
         .bars-box {
@@ -193,11 +245,11 @@
         }
         
         .css-bar {
-            width: 100%;
+            width: 90%;
         }
         
-        .js-bar {
-            width: 50%;
+        .SQL-bar {
+            width: 80%;
         }
         
         .c-bar {
@@ -212,7 +264,7 @@
             width: 85%;
         }
         
-        .FourthSection {
+        .fifthSection {
             max-width: 80vw;
             margin: auto;
             text-align: center;
@@ -286,16 +338,52 @@
         <hr>
         <section class="SecondSection" id="about">
             <h1 class="about_heading">About</h1>
-            <p class="about_discription"><span class="info">Hello! I'm <b>Lakshmi Saranya Koyyalamudi</b> 
-                from Rajahmundry,Andhra Pradesh. A passionate Computer Science and Engineering student
-                 at Pragati Engineering College with a strong foundation in C, Python, HTML, CSS, JavaScript, SQL.</p>
+            <p class="about_description"><span class="info">Hello! I'm <b>Lakshmi Saranya Koyyalamudi.</b> I'm from Rajahmundry,Andhra Pradesh.
+                I enjoy building scalable applications and solving real-world problems using technology. 
+                I am proficient in Python, HTML, CSS and SQL, with hands-on experience in web development.
+            </p>
         </section>
         <hr>
-        <section class="ThirdSection" id="skills">
+        <section class="thirdsection" id="projects">
+            <h1 class="projects">Projects</h1>
+                <h1 class="todolist">1.TO-DO-LIST:</h1>
+                    <p class=todolistdes><b>Features:</b><BR>
+                    <p class="todolistdesc">- Add tasks<BR>
+                    - Remove tasks<BR>
+                   - Delete all tasks<BR>
+                    - Exit application<BR>
+                   - Retrieves tasks from SQLite database<BR></p>                    
+                    <p class=todolistdes><b>Code Structure:</b></p>
+                    <p class="todolistdesc">- GUI built using Tkinter<BR>
+                    - SQLite database for task storage<BR>
+                    - Functions for adding, removing, and deleting tasks<BR>
+                    - Main loop for GUI event handling</P>
+            <h1 class="simplecalculator"><b>2.Simple Calculator:</b></h1>
+                    <p class="simplecalculatordes"><b>Features:</b><br></p>
+                        <p class="simplecalculatordesc">- Performs basic arithmetic operations (addition, subtraction, multiplication, division)<br>
+                    - Handles decimal numbers<br>
+                    - Allows users to clear the display and delete individual digits<br>
+                    - Displays previous and current operands<br></p>
+                    <p class="simplecalculatordes"><b>JavaScript Code:</b><br></p>
+                    <p class="simplecalculatordesc">- Defines a Calculator class to encapsulate calculator functionality<br>
+                    - Uses query selectors to retrieve HTML elements for display and interaction<br>
+                 - Attaches event listeners to buttons for user input<br>
+                   - Updates the display in real-time as users interact with the calculator<br></p></p>
+
+        </section>
+        <hr>
+        <section class="FourthSection" id="skills">
             <h1 class="skills_heading">  Skills  </h1>
             <div class="skills" id="skills">
                 <div class="skills-container">
                     <div class="bars">
+                        <div class="bars-box">
+                            <h3>Python</h3>
+                            <span>95%</span>
+                            <div class="light-bar">
+                            </div>
+                            <div class="percent-bar python-bar"></div>
+                        </div>
                         <div class="bars-box">
                             <h3>HTML</h3>
                             <span>100%</span>
@@ -304,17 +392,17 @@
                 </div>
                 <div class="bars-box">
                     <h3>CSS</h3>
-                    <span>100%</span>
+                    <span>90%</span>
                     <div class="light-bar">
                     </div>
                     <div class="percent-bar css-bar"></div>
                 </div>
                 <div class="bars-box">
-                    <h3>JAVASCRIPT</h3>
-                    <span>50%</span>
+                    <h3>SQL</h3>
+                    <span>80%</span>
                     <div class="light-bar">
                     </div>
-                    <div class="percent-bar js-bar"></div>
+                    <div class="percent-bar SQL-bar"></div>
                 </div>
                 <div class="bars-box">
                     <h3>C</h3>
@@ -323,17 +411,11 @@
                     </div>
                     <div class="percent-bar c-bar"></div>
                 </div>
-                <div class="bars-box">
-                    <h3>Python</h3>
-                    <span>95%</span>
-                    <div class="light-bar">
-                    </div>
-                    <div class="percent-bar python-bar"></div>
-                </div>
+               
 
         </section>
         <hr>
-        <section class="FourthSection" id="contact"></section>
+        <section class="FifthSection" id="contact"></section>
         <h1 class="contact_heading">Contact Me</h1>
         <div class="">
             <div class="resouces d-flex flex-row justify-content-center">
@@ -347,7 +429,6 @@
                 <p><i class="icon fa-brands fa-facebook" style="color: #c7cedc;"></i>saranya1****</p>
             </div>
         </div>
-        <hr>
         <section class="copyRight">
             <p><i class="icon fa-solid fa-copyright" style="color: #b9c5da;"></i>all rights reserved to Lakshmi Saranya Koyyalamudi</p>
         </section>
